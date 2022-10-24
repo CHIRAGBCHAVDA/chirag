@@ -84,17 +84,17 @@ const Sidebar = () => {
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+            <a target="_blank" rel='noreferrer' href="https://www.github.com/CHIRAGBCHAVDA">
                 <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+            <a target="_blank" rel='noreferrer' href="https://www.leetcode.com/chirag_chavda">
                 <FontAwesomeIcon icon={faCode} color="#4d4d4e"/>
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+            <a target="_blank" rel='noreferrer' href="https://www.instagram.com/hacker_0369">
                 <FontAwesomeIcon icon={faInstagram} color="#4d4d4e"/>
             </a>
         </li>

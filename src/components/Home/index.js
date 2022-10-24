@@ -5,7 +5,34 @@ import { useEffect,useState } from "react";
 import './index.scss'
 import Logo from "./Logo";
 import Loader from "react-loaders";
+import { GooeyCircleLoader } from "react-loaders-kit";
+import Typed from "react-typed";
+
+import {
+    faLinkedin,
+    faGithub,
+    faYoutube,
+    faSkype,
+    faInstagram,
+    faRProject,
+    faAndroid,
+    faProductHunt,
+  } from '@fortawesome/free-brands-svg-icons'
+  import {
+    faHome,
+    faUser,
+    faEnvelope,
+    faSuitcase,
+    faBars,
+    faClose,
+    faCode,
+  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+  
+
 const Home = () => {
+    const [loaded, setLoaded] = useState(false);
     const[letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['h','i','r','a','g']
     const jobArray  = ['A','n','d','r','o','i','d',' ','d','e','v','e','l','o','p','e','r',]
@@ -17,11 +44,26 @@ const Home = () => {
     //   }, [])
 
     useEffect(() => {
+    let timer = setTimeout(() => setLoaded(true), 2000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+    useEffect(() => {
         setTimeout(() => {
           setLetterClass('text-animate-hover')
         }, 4000)
       }, [])
     
+      const loaderProps = {
+        loading: true,
+        size: 275,
+        duration: 2,
+        colors: ["aqua", "red", "yellow"],
+      };
+
+      
     return(
         <>
             
@@ -40,22 +82,64 @@ const Home = () => {
             idx={0}
         />
         <br/>
-        
+        <span className="myJob">
         <AnimatedLetters letterClass={letterClass}
             strArray={jobArray}
             idx={5}
         />
+
+        </span>
         </h1>
 
-        <h2>Java Enthusiast / Problem Solver / Learner </h2>
+        <h2 className="skills">Java Enthusiast / Problem Solver / Learner </h2>
         <Link to={"/contact"} className="flat-button">Contact Me</Link>
         </div>
 
         {/* <Logo/> */}
 
         </div>
-        <Loader type="pacman"/>
+
+        {/* <Loader type="pacman" /> */}
+        {!loaded ? (
+            <div className="loader">
+        <GooeyCircleLoader {...loaderProps} />
+        <Typed
+          className="loader-text" style={{color:'white'}}
+          strings={["Loading..."]}
+          typeSpeed={60}
+          backSpeed={0}
+        />
+    </div>
+      ):(
         
+         <Loader />
+      )}
+
+        <div className="socialHandles">
+
+        <ul>
+        <li>
+            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+                <FontAwesomeIcon icon={faCode} color="#4d4d4e"/>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/chirag-chavda">
+                <FontAwesomeIcon icon={faInstagram} color="#4d4d4e"/>
+            </a>
+        </li>
+    </ul>
+    </div>
         </>
     )
 };

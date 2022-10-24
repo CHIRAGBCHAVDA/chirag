@@ -35,6 +35,8 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  left: 0%;
+  right: 0%;
 }
 
 .about-page,
@@ -48,6 +50,7 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+    
 
     h1 {
       font-size: 53px;
@@ -84,7 +87,8 @@
     }
 
     p {
-      font-size: 13px;
+      font-size: 15px;
+      text-align: justify;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;

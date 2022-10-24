@@ -9,7 +9,7 @@ import './index.scss'
 function Project1() {
   return (
    <>
-   <CardGroup>
+   <CardGroup className='d-flex'>
       <Card className="mycard" >
         <Card.Img className="cardImg" variant="top" src={GImg}  />
         <Card.Body>
@@ -36,8 +36,24 @@ function Project1() {
         <a href = "/about"> <small className="gitLink">View Project</small> </a>
         </Card.Footer>
       </Card>
-     
       </CardGroup>
+
+      <Card className="mycard mycard3">
+        <Card.Img className="cardImg" variant="top" src={GImg}  />
+        <Card.Body>
+          <Card.Title className="cardHeader">Guardian Angel</Card.Title>
+          <Card.Text className="cardText">
+          This project “Guardian Angel” is aimed to seek help from the near and dear ones under the situation of threat to one’s life. Mainly made for women travelling during late night or passing by some crucial areas where one cannot get help easily.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer className="cardFooter">
+          <a href = "/"> <small className="gitLink">View Project</small> </a>
+        </Card.Footer>
+      </Card>
+
+
+      
+     
 
    </>
   )

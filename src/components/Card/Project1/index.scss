@@ -26,6 +26,7 @@
     font-family: 'coolvetica';
     justify-content: center;
     text-align: justify;
+    font-size: large;
 }
 .cardHeader{
     // font-family: 'La Belle Aurore';
@@ -52,4 +53,12 @@
     a{
         color: black;
     }
+}
+
+@media screen and (max-device-width : 1250px){
+    .mycard3{
+        position: absolute;
+        top: 58%;
+    }
+
 }

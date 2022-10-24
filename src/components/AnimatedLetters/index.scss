@@ -21,3 +21,10 @@
         animation-delay: #{$i/10}s;
     }
 }
+
+@for $i from 5 to 21{
+    .text-animate._#{$i}{
+        // animation-delay: #{$i/10};
+        font-size: large;
+    }
+}

@@ -3,9 +3,8 @@ import React from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from "react";
 import Project1 from '../Card/Project1';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import Loader from 'react-loaders'
 
 export default function Projects() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,11 +31,13 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className='pro'>
+        <div className='pro d-flex'>
           <Project1/>
         </div>
 
       </div>
+      
+      <Loader type="pacman" style={{position:"absolute",left:"5%",top:'5%'}}/>
 
       
 

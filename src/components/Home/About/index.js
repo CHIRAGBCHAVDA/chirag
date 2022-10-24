@@ -53,7 +53,8 @@ const About = () => {
 
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="pacman" style={{position:"absolute",left:"5%",top:'5%'}}/>
+
     </>
   )
 
