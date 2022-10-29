@@ -30,6 +30,17 @@ export default function Projects() {
             </h1>
           </div>
         </div>
+        {/* <div style={{background:"orange",fontWeight:"700",display: "grid", gridAutoRows: "200px",textAlign:"center"}}>
+        Byeee
+          <div className="div-grid grid-t-col:repeat(2,2fr)" style={{background:"white",display: "grid", gridTemplateColumns: "repeat(2,2fr)",textAlign:"center", gridAutoRows: "200px"}}>
+          <div style={{background:"yellow"}}>
+            Hello
+          </div>
+          <div style={{background:"red"}}>
+          Hi
+          </div>
+          </div>
+        </div> */}
 
         <div className='pro d-flex'>
           <Project1/>
