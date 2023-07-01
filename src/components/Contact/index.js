@@ -4,7 +4,7 @@ import './index.scss'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import {PublicKey,ServiceId,TemplateId} from '../../Private/email.credentials.js';
+// import {PublicKey,ServiceId,TemplateId} from '../../Private/email.credentials.js';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,7 +23,7 @@ const Contact = () => {
         e.preventDefault()
         setLoading(true);
         try {
-            await emailjs.sendForm(ServiceId, TemplateId, refForm.current, PublicKey);
+            await emailjs.sendForm(process.env.ServiceId, process.env.TemplateId, refForm.current, process.env.PublicKey);
             // Hide loader
             setLoading(false);
             toast.success("Message Successfully sent!");
