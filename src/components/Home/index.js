@@ -35,7 +35,7 @@ const Home = () => {
     const [loaded, setLoaded] = useState(false);
     const[letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['h','i','r','a','g']
-    const jobArray  = ['A','n','d','r','o','i','d',' ','d','e','v','e','l','o','p','e','r',]
+    const jobArray  = ['A','n','g','u','l','a','r',' ','d','e','v','e','l','o','p','e','r',]
 
     // useEffect(() => {
     //     return setTimeout(() => {
@@ -91,7 +91,7 @@ const Home = () => {
         </span>
         </h1>
 
-        <h2 className="skills">Java Enthusiast / Problem Solver / Learner </h2>
+        <h2 className="skills">.NET MVC | SQL (SSMS) </h2>
         <Link to={"/contact"} className="flat-button">Contact Me</Link>
         </div>
 

@@ -2,7 +2,7 @@ import AnimatedLetters from "../../AnimatedLetters";
 import './index.scss'
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAndroid, faCss3, faHtml5, faJava, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faAngular, faCss3, faHtml5, faJava, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 import Loader from 'react-loaders'
 const About = () => {
@@ -23,9 +23,9 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>Currently pursing my bachelors in Information Technology at Gujarat Technological University.</p>
-          <p>Passionate about my work, Meticulous and Organized individual seeking an Entry-Level position in the vast field of programming. Strong ability to handle complex projects. Innovative, creative, and willing to contribute ideas and learn new things.</p>
-          <p>Willing to work as future Software Developer.</p>
+          <p>As a meticulous and organized individual, I have actively pursued an entry-level position in the vast field of programming.</p>
+          <p>With a strong aptitude for handling complex projects, I possess a natural inclination towards innovation, creativity, and a willingness to contribute ideas while continuously expanding my knowledge.</p>
+          <p>My skills lie in Asp .NET, ASP .NET Web API, Angular, Material, and SQL. I am experienced in building websites and web applications, ensuring seamless functionality and user experience.</p>
 
         </div>
         <div className="stage-cube-cont">
@@ -34,7 +34,7 @@ const About = () => {
               <FontAwesomeIcon icon={faJava} color='#dd0031' />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faAndroid} color="green" />
+              <FontAwesomeIcon icon={faAngular} color="red" />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faHtml5} color='#28A4D9' />
@@ -53,7 +53,7 @@ const About = () => {
 
         </div>
       </div>
-      <Loader type="pacman" style={{position:"absolute",left:"5%",top:'5%'}}/>
+      <Loader type="pacman" style={{ position: "absolute", left: "5%", top: '5%' }} />
 
     </>
   )
